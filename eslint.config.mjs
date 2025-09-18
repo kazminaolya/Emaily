@@ -6,8 +6,11 @@ export default defineConfig([
 	{
 		files: ['**/*.{js,mjs,cjs}'],
 		plugins: { js },
-		extends: ['js/recommended'],
-		languageOptions: { globals: {...globals.node }},
+    extends: [
+        'eslint:recommended',
+      'js/recommended',
+    ],
+    languageOptions: { globals: {...globals.browser, ...globals.node }},
 	},
 	{
 		ignores: ['node_modules/', 'build/', 'coverage/', 'public/'],
