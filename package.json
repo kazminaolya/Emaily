@@ -10,7 +10,7 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "lint": "eslint .",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix --legacy-peer-deps client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
